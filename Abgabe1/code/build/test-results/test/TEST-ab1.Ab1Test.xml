@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ab1.Ab1Test" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-15T19:32:38" hostname="TAG009442004069" time="8.83">
+  <properties/>
+  <testcase name="testShellSort()" classname="ab1.Ab1Test" time="0.07"/>
+  <testcase name="testMatMultSquare()" classname="ab1.Ab1Test" time="2.132"/>
+  <testcase name="testMatMultCorrectness()" classname="ab1.Ab1Test" time="0.002"/>
+  <testcase name="testQuickSortStable()" classname="ab1.Ab1Test" time="1.544"/>
+  <testcase name="testBinarySearch()" classname="ab1.Ab1Test" time="1.2"/>
+  <testcase name="testMatMultNotSquare1()" classname="ab1.Ab1Test" time="0.867"/>
+  <testcase name="testMatMultNotSquare2()" classname="ab1.Ab1Test" time="0.442"/>
+  <testcase name="testQuickSort()" classname="ab1.Ab1Test" time="2.568"/>
+  <system-out><![CDATA[Punkte: 15
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
