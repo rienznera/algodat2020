@@ -1,7 +1,6 @@
 package ab3;
 
-import ab3.impl.Nachname.AB3Impl;
-import intern.impl.Ab3RefImpl;
+import ab3.impl.AngermannHuberRienzner.AB3Impl;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
