@@ -1,6 +1,6 @@
 package ab2;
 
-import ab2.impl.Nachnamen.Ab2Impl;
+import ab2.impl.AngermannRienzner.Ab2Impl;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
