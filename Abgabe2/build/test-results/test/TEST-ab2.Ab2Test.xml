@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ab2.Ab2Test" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-06-07T12:27:28" hostname="TAB032" time="474.463">
+  <properties/>
+  <testcase name="testHeapCornerCases()" classname="ab2.Ab2Test" time="0.03"/>
+  <testcase name="testQuickSelectSingleCall()" classname="ab2.Ab2Test" time="8.727"/>
+  <testcase name="testHeapSorted()" classname="ab2.Ab2Test" time="0.233"/>
+  <testcase name="testHashSetCollisions()" classname="ab2.Ab2Test" time="0.022"/>
+  <testcase name="testQuickSelectCornerCases()" classname="ab2.Ab2Test" time="1.027"/>
+  <testcase name="testHashSet()" classname="ab2.Ab2Test" time="0.014"/>
+  <testcase name="testHeapLarge()" classname="ab2.Ab2Test" time="1.666"/>
+  <testcase name="testHeapSmall()" classname="ab2.Ab2Test" time="0.066"/>
+  <testcase name="testQuickSelectMultipleCalls()" classname="ab2.Ab2Test" time="462.648"/>
+  <testcase name="testQuickSelectErrors()" classname="ab2.Ab2Test" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
