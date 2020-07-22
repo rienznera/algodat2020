@@ -19,22 +19,27 @@ public class AB3Impl implements AB3 {
 	@Override
 	public Set<SymbolCode> huffmanCoding(List<Character> symbols, List<Integer> frequency) {
 
-		PriorityQueue<HuffNode> pq = new PriorityQueue<>();
+		MinHeap pq = new MinHeap(symbols.size());
+
 		//Build HuffTree using HuffNode Class
 		for(int i = 0; i < symbols.size(); i++){
 			HuffNode hn = new HuffNode(frequency.get(i), symbols.get(i).charValue() );
 			pq.add(hn);
+
 		}
 
 		HuffNode root = null;
 
 
 		//solange Heap > 1 --> extrahiere die 2 kleinsten und erzeuge neuen Knoten mit
-		while (pq.size() > 1){
+		while (pq.size() > 1) {
 			HuffNode first = pq.peek();
 			pq.poll();
 			HuffNode second = pq.peek();
 			pq.poll();
+
+
+
 
 			//neuer Node mit addierter Wertigkeit
 			HuffNode n = new HuffNode((first.data + second.data), '-');
@@ -42,9 +47,8 @@ public class AB3Impl implements AB3 {
 			n.right = second;
 			root = n;
 			pq.add(n);
-
-
 		}
+
 
 		//Build resultSet
 
@@ -94,8 +98,68 @@ class HuffNode implements Comparable<HuffNode> {
 		return this.data - o.data;
 	}
 
+}
+
+//own implementation of MinHeap
+class MinHeap {
+	HuffNode[] nodes;
+	int size;
+	MinHeap(int size){
+		//assure there's enough space for additional Nodes
+		this.nodes = new HuffNode[size+1];
+		this.size=0;
+	}
+
+	public HuffNode peek(){
+		return nodes[1];
+	}
+
+	public void poll(){
+		int parent, child;
+		HuffNode temp;
+		if (this.size!= 0) {
+
+			temp = nodes[size--];
+
+			parent = 1;
+			child = 2;
+			while (child <= size) {
+				if (child < size && nodes[child].data > nodes[child + 1].data)
+					child++;
+				if (temp.data <= nodes[child].data)
+					break;
+
+				nodes[parent] = nodes[child];
+				parent = child;
+				child *= 2;
+			}
+			nodes[parent] = temp;
+
+		}
+	}
+
+	public void add(HuffNode newNode)
+	{
+
+		nodes[++size] = newNode;
+		int pos = size;
+		while (pos != 1 && newNode.data < nodes[pos/2].data)
+		{
+			nodes[pos] = nodes[pos/2];
+			pos /=2;
+		}
+		nodes[pos] = newNode;
+
+	}
+
+	public int size() {
+		return size;
+	}
 
 
 
 }
+
+
+
 

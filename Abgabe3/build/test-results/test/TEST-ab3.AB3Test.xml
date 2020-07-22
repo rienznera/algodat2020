@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ab3.AB3Test" tests="10" skipped="0" failures="6" errors="0" timestamp="2020-07-21T08:22:18" hostname="TAB032" time="1.62">
+<testsuite name="ab3.AB3Test" tests="10" skipped="0" failures="6" errors="0" timestamp="2020-07-22T09:43:52" hostname="TAB032" time="1.588">
   <properties/>
-  <testcase name="findPatternEndlAutomatExtended()" classname="ab3.AB3Test" time="0.223">
+  <testcase name="findPatternEndlAutomatExtended()" classname="ab3.AB3Test" time="0.162">
     <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;Expecting:&#13;&#10; &lt;null&gt;&#13;&#10;to be equal to:&#13;&#10; &lt;[0, 1]&gt;&#13;&#10;but was not." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
 Expecting:
  &lt;null&gt;
@@ -103,10 +103,10 @@ but was not.
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="huffmanCoding1()" classname="ab3.AB3Test" time="0.026"/>
-  <testcase name="huffmanCoding2()" classname="ab3.AB3Test" time="0.004"/>
-  <testcase name="huffmanCoding3()" classname="ab3.AB3Test" time="0.697"/>
-  <testcase name="findPatternKMPPerformance()" classname="ab3.AB3Test" time="0.056">
+  <testcase name="huffmanCoding1()" classname="ab3.AB3Test" time="0.061"/>
+  <testcase name="huffmanCoding2()" classname="ab3.AB3Test" time="0.002"/>
+  <testcase name="huffmanCoding3()" classname="ab3.AB3Test" time="0.38"/>
+  <testcase name="findPatternKMPPerformance()" classname="ab3.AB3Test" time="0.033">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at ab3.AB3Test.findPatternKMPPerformance(AB3Test.java:188)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -478,8 +478,8 @@ but was not.
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="huffmanCodingPerformance()" classname="ab3.AB3Test" time="0.55"/>
-  <testcase name="findPatternEndlAutomatBasic()" classname="ab3.AB3Test" time="0.04">
+  <testcase name="huffmanCodingPerformance()" classname="ab3.AB3Test" time="0.894"/>
+  <testcase name="findPatternEndlAutomatBasic()" classname="ab3.AB3Test" time="0.028">
     <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;Expecting:&#13;&#10; &lt;null&gt;&#13;&#10;to be equal to:&#13;&#10; &lt;[]&gt;&#13;&#10;but was not." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
 Expecting:
  &lt;null&gt;
